@@ -1,0 +1,23 @@
+<!--Confeccione un formulario que solicite el ingreso de un mail, 
+una clave y luego muestre una serie de títulos de películas con su 
+respectivo checkbox. Disponer también del botón de tipo submit para 
+el envío de datos al servidor.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema 22</title>
+  </head>
+  <body>
+    <form action="registrardatos.php" method="post">
+      Ingrese su email: <input type="email" name="email" size="30"><br>
+      Ingrese su contraseña: <input type="password" name="password" size="20"><br>
+      Peliculas favoritas:<br>
+      <input type="checkbox" name="interestelar">Interestelar<br>
+      <input type="checkbox" name="titanic">Titanic<br>
+      <input type="checkbox" name="odisea">Odisea<br>
+      <input type="submit" value="enviar">
+    </form>
+  </body>
+</html>
