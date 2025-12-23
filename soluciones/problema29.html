@@ -1,0 +1,25 @@
+<!--Confeccionar un formulario que solicite el ingreso del nombre 
+de una persona y permita votar el sitio. Mediante un cuadro de 
+selección el visitante puede elegir entre las siguientes 
+opciones: Excelente, Muy Bueno, Bueno, Regular y Malo.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema 29</title>
+  </head>
+  <body>
+    <form action="registrardatos.php" method="post">
+      Ingrese su nombre: <input type="text" name="nombre" size="30"><br>
+      Califique el sitio: <select name="calificacion">
+        <option value="excelente">Excelente</option>
+        <option value="muy bueno">Muy Bueno</option>
+        <option value="bueno">Bueno</option>
+        <option value="regular">Regular</option>
+        <option value="malo">Malo</option>
+      </select><br>
+      <input type="submit" value="enviar">
+    </form>
+  </body>
+</html>
