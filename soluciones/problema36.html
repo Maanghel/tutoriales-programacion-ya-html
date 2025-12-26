@@ -1,0 +1,36 @@
+<!--Confeccione un formulario de un libro de visitas, se debe solicitar 
+el nombre, mail, país de origen (por defecto la opcion seleccionada debe 
+ser "seleccione pais"), valoración del sitio 
+(malo, regular, bueno, muy bueno, excelente) por defecto debe estar 
+seleccionado "bueno". Por último disponer un textarea donde se puede ingresar los comentarios.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema 36</title>
+  </head>
+  <body>
+    <form action="registrardatos.php" method="post">
+      Ingresar su nombre: <input type="text" name="nombre" size="20"><br>
+      Ingresar su email: <input type="email" name="email" size="30"><br>
+      Seleccione su pais:<br>
+      <select name="pais">
+        <option value="seleccione pais">Seleccione pais</option>
+        <option value="mexico">Mexico</option>
+        <option value="estados unidos">Estados Unidos</option>
+        <option value="canada">Canada</option>
+      </select><br>a
+      Valoracion del sitio:
+      <select name="valoracion">
+        <option value="malo">Malo</option>
+        <option value="regular">Regular</option>
+        <option value="bueno" selected>Bueno</option>
+        <option value="muy bueno">Muy bueno</option>
+        <option value="excelente">Excelente</option>
+      </select><br>
+      <textarea name="comentarios" rows="10" cols="50">Ingrese sus comentarios aqui:</textarea><br>
+      <input type="submit" value="enviar">
+    </form>
+  </body>
+</html>
