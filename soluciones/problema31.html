@@ -1,0 +1,27 @@
+<!--Confeccione un control de tipo select con los nombres de paises de América y Europa. Agrupe los paises por continente.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema 31</title>
+  </head>
+  <body>
+    <form action="registrardatos.php" method="post">
+      Seleccione un pais de la siguiente lista:<br>
+      <select name="pais">
+        <optgroup label="America">
+          <option value="1">Mexico</option>
+          <option value="2">Estados Unidos</option>
+          <option value="3">Canada</option>
+        </optgroup>
+        <optgroup label="Europa">
+          <option value="4">Alemania</option>
+          <option value="5">Francia</option>
+          <option value="6">Italia</option>
+        </optgroup>
+      </select><br>
+      <input type="submit" value="enviar">
+    </form>
+  </body>
+</html>
