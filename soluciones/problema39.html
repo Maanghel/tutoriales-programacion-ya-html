@@ -1,0 +1,19 @@
+<!--Confeccionar un formulario que solicite el ingreso del nombre y 
+apellido de una persona (hasta 40 caracteres), su edad (3 caracteres 
+como máximo) y su documento nacional de identidad (hasta 8 caracteres)-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema 39</title>
+  </head>
+  <bdoy>
+    <form action="registrardatos.php" method="post">
+      Ingrese su nombre completo: <input type="text" maxlength="40" name="nombre" size="40"><br>
+      Ingrese su edad: <input type="text" maxlength="3" name="edad" size="3"><br>
+      Ingrese su DNI: <input type="text" maxlength="8" name="dni" size="8"><br>
+      <input type="submit" value="enviar">
+    </form>
+  </bdoy>
+</html>
