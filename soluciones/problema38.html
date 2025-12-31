@@ -1,0 +1,40 @@
+<!--Confeccionar un formulario que muestre un control de cada tipo y 
+los muestre todos deshabilitados. (Cuando conozca JavaScript podemos 
+habilitarlos por ejemplo si el visitante ingresa una clave correcta, 
+por ahora vea como queda visualmente el formulario con los controles 
+deshabilitados)-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema 38</title>
+  </head>
+  <body>
+    <form action="registrardatos.php" method="post">
+      Nombre: <input type="text" name="text1" size="5" disabled>
+      <br>
+      Clave: <input type="password" name="password1" size="5" disabled>
+      <br>
+      Comentarios: <br><textarea name="comentarios" rows="10" cols="50" disabled></textarea>
+      <br>
+      <input type="checkbox" name="op1" disabled> Opcion 1<br>
+      <input type="checkbox" name="op2" disabled> Opcion 2<br>
+      <input type="checkbox" name="op3" disabled> Opcion 3
+      <br>
+      <input type="radio" name="radio1" disabled> Opcion 1<br>
+      <input type="radio" name="radio2" disabled> Opcion 2<br>
+      <input type="radio" name="radio3" disabled> Opcion 3
+      <br>
+      <select name="pais" disabled>
+        <option value="1">Argentina</option>
+        <option value="2">España</option>
+        <option value="3">México</option>
+      </select>
+      <br>
+      <button type="submit" disabled> Enviar<br>datos</button>
+      <br>
+      <input type="submit" value="enviar" disabled>
+    </form>
+  </body>
+</html>
