@@ -1,0 +1,31 @@
+<!--Confeccionar un formulario que permita solicitar pizzas a domicilio. 
+Enviar el pedido a la dirección de correo pizzasya@gmail.com-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema 41</title>
+  </head>
+  <body>
+    <form action="mailto:pizzasya@gmail.com?subject=pedido" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Datos del cliente</legend>
+        Nombre: <input type="text" name="nombre" size="20"><br>
+        Apellido: <input type="text" name="apellido" size="20"><br>
+        Telefono: <input type="text" name="telefono" size="10"><br>
+        domicilio: <input type="text" name="domicilio" size="30"><br>
+      </fieldset><br>
+      <fieldset>
+        <legend>Datos del pedido</legend>
+        Producto: <input type="text" name="producto" size="20"><br>
+        Cantidad: <input type="text" name="cantidad" size="5"><br>
+        tamaño: <select name="tamaño">
+          <option value="grande">Grande</option>
+          <option value="mediano">Mediano</option>
+          <option value="pequeño">Pequeño</option>
+        </select>
+      </fieldset><br>
+      <input type="submit" value="enviar">
+  </body>
+</html>
