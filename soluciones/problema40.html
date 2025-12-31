@@ -1,0 +1,17 @@
+<!--Crear un controles de tipo text, password y textarea. Disponerlos todos de solo lectura.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Problema40</title>
+  </head>
+  <body>
+    <form action="registrardatos.php" method="post">
+      Ingrese su nombre completo: <input type="text" maxlength="40" name="nombre" size="40" value="Manuel" readonly><br>
+      Ingrese su contraseña: <input type="password" name="password" size="20" value="12345admin" readonly><br>
+      Opiniones: <br><textarea name="opiniones" rows="10" cols="50" readonly>Ejemplificando el readonly</textarea><br>
+      <input type="submit" value="enviar">
+    </form>
+  </body>
+</html>
